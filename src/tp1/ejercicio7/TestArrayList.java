@@ -76,6 +76,46 @@ public class TestArrayList {
 			System.out.println(i);
 		}
 		
+	    //parte H
+		
+		listaNum.add(7);
+		listaNum.add(9);
+		for (Integer i:listaNum) {
+			System.out.println(i);
+		}
+		ArrayList<Integer> listaInvertida = new ArrayList<>(listaNum);
+		l.invertirArrayList(listaInvertida);
+		for(Integer i:listaInvertida) {
+			System.out.println(i);		
+		}
+		
+		// parte I
+		
+		LinkedList<Integer> listaLinkedList = new LinkedList<>();
+		listaLinkedList.add(2);
+		listaLinkedList.add(4);
+		listaLinkedList.add(14);
+		
+		System.out.println(l.sumarLinkedList(listaLinkedList));
+		
+		
+		
+		//parte J
+		
+		ArrayList<Integer> listaOrdenada1 = new ArrayList<>(), listaOrdenada2 = new ArrayList<>(),listaOrdenadaFinal = new ArrayList<>();
+		listaOrdenada1.add(2);
+		listaOrdenada1.add(4);
+		listaOrdenada1.add(5);
+		listaOrdenada1.add(7);
+		listaOrdenada2.add(1);
+		listaOrdenada2.add(3);
+		listaOrdenada2.add(8);	
+		listaOrdenadaFinal=l.combinarOrdenado(listaOrdenada1, listaOrdenada2);
+		
+		System.out.println("----------------------------");
+		for(Integer i:listaOrdenadaFinal) {
+			System.out.println(i);
+		}
 	}
 	
 	
